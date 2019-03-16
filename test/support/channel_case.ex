@@ -25,7 +25,6 @@ defmodule OnXdarts.ChannelCase do
       import Ecto.Changeset
       import Ecto.Query
 
-
       # The default endpoint for testing
       @endpoint OnXdarts.Endpoint
     end

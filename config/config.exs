@@ -14,8 +14,7 @@ config :onXdarts, OnXdarts.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "PF/yBM6tUH6NENd9u7KYfh9XRrbeX3DWP6dz+o6c/+6LYgbscjuklByI0/ZGjpKU",
   render_errors: [view: OnXdarts.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: OnXdarts.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: OnXdarts.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -24,4 +23,4 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

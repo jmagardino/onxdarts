@@ -11,7 +11,7 @@ defmodule OnXdarts do
       # Start the Ecto repository
       supervisor(OnXdarts.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(OnXdarts.Endpoint, []),
+      supervisor(OnXdarts.Endpoint, [])
       # Start your own worker by calling: OnXdarts.Worker.start_link(arg1, arg2, arg3)
       # worker(OnXdarts.Worker, [arg1, arg2, arg3]),
     ]
